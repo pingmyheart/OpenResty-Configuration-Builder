@@ -59,17 +59,7 @@ args:
   uri: "http://upstream-service:80"
 ```
 
-2. **Dynamic Auth Filter**: Dynamically applies authentication based on the request and configuration.  
-   This filter sends a POST request with basic auth header to check if the request is authenticated or not. The URL for
-   validation should be defined in the configuration.
-
-```yaml
-name: dynamic_auth
-args:
-  validation-url: "http://auth-service/validate"
-```
-
-3. **Rewrite Filter**: Rewrites the request URL based on specified rules.  
+2**Rewrite Filter**: Rewrites the request URL based on specified rules.  
    This filter allows you to modify the incoming request URL before it is processed by the upstream service. You can
    define rewrite rules in the configuration to specify how the URL should be rewritten.
 
@@ -78,18 +68,6 @@ name: rewrite
 args:
   regex: "^/api/(.*)"
   replacement: "/$1"
-```
-
-4. **Static Basic Auth Filter**: Applies basic authentication with static credentials defined in the configuration.  
-   This filter checks the incoming request for basic authentication credentials and compares them against the static
-   credentials defined in the configuration. If the credentials match, the request is allowed to proceed; otherwise, it
-   is rejected with an unauthorized response.  
-   Credentials file is a file with each like like username:base64encodedpassword
-
-```yaml
-name: static_basic_auth
-args:
-  credentials-file: "/path/to/credentials.txt"
 ```
 
 ## How It Works
