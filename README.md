@@ -2,6 +2,14 @@
 
 *Lightweight API Gateway Configurer for OpenResty*
 
+![Last Commit](https://img.shields.io/github/last-commit/pingmyheart/OpenResty-Configuration-Builder)
+![Repo Size](https://img.shields.io/github/repo-size/pingmyheart/OpenResty-Configuration-Builder)
+![Issues](https://img.shields.io/github/issues/pingmyheart/OpenResty-Configuration-Builder)
+![Pull Requests](https://img.shields.io/github/issues-pr/pingmyheart/OpenResty-Configuration-Builder)
+![License](https://img.shields.io/github/license/pingmyheart/OpenResty-Configuration-Builder)
+![Top Language](https://img.shields.io/github/languages/top/pingmyheart/OpenResty-Configuration-Builder)
+![Language Count](https://img.shields.io/github/languages/count/pingmyheart/OpenResty-Configuration-Builder)
+
 ## Features
 
 - **Dynamic Configuration**: Automatically configures OpenResty based on configuration.
